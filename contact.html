@@ -34,6 +34,68 @@
   		<link rel="preconnect" href="https://fonts.googleapis.com">
   		<link rel="dns-prefetch" href="https://fonts.gstatic.com">
   		<link rel="preload" href="/fonts/inter-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  
+  
+  <!-- Registration form -->
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .contact-form {
+            width: 100%;
+            max-width: 600px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            font-size: 14px;
+            color: #333;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        textarea {
+            resize: vertical;
+            height: 150px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+  <!-- Registration form -->
+  
+  
+  
   </head>
 
   <body>
@@ -87,56 +149,35 @@
 
           <p>*****************************</p>
 
-		  <!--
-          <h4>Why Attend?</h4>
-
-          <ul class="why-attend">
-            <li>Over twenty world-class speakers</li>
-            <li>One full day of workshops and two full days of presentations</li>
-            <li>Hosted at The Chicago Theatre, a historical landmark</li>
-            <li>August in Chicago is simply amazing</li>
-          </ul>
-         -->
+		  
         </section>
 		  
 		<!-- Registration form -->
-		  <!--
-		  <form class="col-1-3" action="#" method="post">
-
-          <fieldset class="register-group">
-
-            <label>
-              Name
-              <input type="text" name="name" placeholder="Full name" required>
-            </label>
-
-            <label>
-              Email
-              <input type="email" name="email" placeholder="Email address" required>
-            </label>
-
-            <label>
-              Number of Passes
-              <select name="quantity" required>
-                <option value="1" selected>1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-              </select>
-            </label>
-
-            <label>
-              Comments
-              <textarea name="comments"></textarea>
-            </label>
-
-          </fieldset>
-
-          <input class="btn btn-default" type="submit" name="submit" value="Purchase">
-
+ <div class="contact-form">
+        <h2>Contactează-ne</h2>
+        <form action="send_email.php" method="POST">
+            <div class="form-group">
+                <label for="name">Nume complet</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Adresă de email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subiect</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mesaj</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Trimite mesajul</button>
         </form>
-		-->
+    </div>
+
+		<!-- Registration form -->
+		  
       </div>
     </section>
 
