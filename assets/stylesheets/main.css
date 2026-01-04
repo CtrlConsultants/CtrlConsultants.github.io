@@ -518,15 +518,14 @@ textarea {
 }
 
 .form-group label {
-    font-size: 14px;
     font-weight: 600;
     margin-bottom: 6px;
 }
 
 .form-group input,
 .form-group textarea {
-    font-size: 16px;
     padding: 10px 12px;
+    font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
@@ -538,7 +537,6 @@ textarea {
 }
 
 .btn-submit {
-    margin-top: 10px;
     padding: 12px;
     font-size: 16px;
     font-weight: 600;
@@ -549,6 +547,31 @@ textarea {
     cursor: pointer;
 }
 
-.btn-submit:hover {
+.btn-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.btn-submit:hover:not(:disabled) {
     background-color: #43a047;
+}
+
+/* Status messages */
+.form-status {
+    display: none;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.form-status.success {
+    color: #2e7d32;
+}
+
+.form-status.error {
+    color: #c62828;
+}
+
+/* Honeypot field (anti-spam) */
+.hp-field {
+    display: none !important;
 }
