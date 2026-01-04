@@ -490,14 +490,65 @@ textarea {
   height: 78px;
 }
 
-/*     Registration form
-*/
-.contact
-.contact-title
-.contact-form
-.form-group
-.form-group label
-.form-group input
-.form-group textarea
-.btn-submit
+/* =========================
+   CONTACT FORM
+   ========================= */
 
+.contact {
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 20px;
+}
+
+.contact-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 32px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+    font-size: 16px;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+.btn-submit {
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #43a047;
+}
