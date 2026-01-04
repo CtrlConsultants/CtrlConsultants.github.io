@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = htmlspecialchars($_POST['message']);
     
     // Detalii pentru email
-    $to = "xyz@example.com";  // Schimbă cu adresa ta de email
+    $to = "cezar.c68@gmail.com";  // Schimbă cu adresa ta de email
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8" . "\r\n";
     $headers .= "From: " . $email . "\r\n";
